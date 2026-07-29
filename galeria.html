@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria de fotos de festas decoradas pela Glipearte Pegue e Monte. Inspire-se com nossos modelos de decoração Pegue e Monte.">
+  <meta name="keywords" content="galeria festas decoradas, fotos decoração, inspiração festa, Glipearte, Fortaleza">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Galeria | Glipearte Pegue e Monte">
+  <meta property="og:description" content="Inspire-se com as decorações mais lindas da Glipearte. Veja fotos de festas reais montadas com nossos kits.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.glipearte.com.br/galeria.html">
+  <meta property="og:image" content="https://www.glipearte.com.br/images/og-image.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <title>Galeria de Festas | Glipearte Pegue e Monte</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Glipearte Pegue e Monte">
+          <div class="logo-icon"><i class="fas fa-birthday-cake" aria-hidden="true"></i></div>
+          <span class="logo-text">Glipearte</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Menu principal">
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="index.html#sobre" class="nav-link">Quem Somos</a>
+          <a href="catalogo.html" class="nav-link">Kits</a>
+          <a href="index.html#temas" class="nav-link">Temas</a>
+          <a href="index.html#como-funciona" class="nav-link">Como Funciona</a>
+          <a href="galeria.html" class="nav-link active">Galeria</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contato.html" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn desktop-only" id="themeToggle" aria-label="Alternar modo escuro">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+          <a href="https://wa.me/5585999999999" class="btn btn-whatsapp btn-sm desktop-only" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+          </a>
+          <div class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+    <a href="index.html" class="nav-link">Início</a>
+    <a href="index.html#sobre" class="nav-link">Quem Somos</a>
+    <a href="catalogo.html" class="nav-link">Kits</a>
+    <a href="index.html#temas" class="nav-link">Temas</a>
+    <a href="index.html#como-funciona" class="nav-link">Como Funciona</a>
+    <a href="galeria.html" class="nav-link active">Galeria</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="contato.html" class="nav-link">Contato</a>
+  </nav>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: 120px;">
+      <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1920&q=80" alt="Galeria de decorações de festas" class="hero-bg" loading="eager">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" style="text-align: center; justify-content: center;">
+        <div class="hero-text" style="max-width: 800px;">
+          <span class="section-label" style="margin-bottom: 24px;">Galeria</span>
+          <h1 class="hero-title">Inspirações para sua Festa</h1>
+          <p class="hero-subtitle">Veja fotos de decorações montadas com nossos kits e inspire-se para seu evento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Tags -->
+    <section class="gallery section-padding" style="padding-top: 40px;">
+      <div class="container">
+        <div class="filter-bar" id="galleryFilterBar">
+          <button class="filter-btn active" data-filter="todos">Todas</button>
+          <button class="filter-btn" data-filter="Infantil">Infantil</button>
+          <button class="filter-btn" data-filter="Adulto">Adulto</button>
+          <button class="filter-btn" data-filter="Chá">Chá de Bebê</button>
+          <button class="filter-btn" data-filter="Casamento">Casamento</button>
+          <button class="filter-btn" data-filter="Corporativo">Corporativo</button>
+        </div>
+
+        <div class="gallery-masonry" id="galleryMasonry">
+          <!-- Gallery items rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Glipearte</a>
+          <p class="footer-desc">Transformamos festas em momentos inesquecíveis com kits de decoração completos, práticos e econômicos.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/glipearte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/glipearte" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://wa.me/5585999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Menu</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#sobre">Quem Somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Temas</h4>
+          <ul class="footer-links">
+            <li><a href="catalogo.html?categoria=Infantil">Infantil</a></li>
+            <li><a href="catalogo.html?categoria=Adulto">Adulto</a></li>
+            <li><a href="catalogo.html?categoria=Cha%20Revelacao">Chá Revelação</a></li>
+            <li><a href="catalogo.html?categoria=Casamento">Casamento</a></li>
+            <li><a href="catalogo.html?categoria=Festa%20Junina">Festa Junina</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Fortaleza – CE</span></li>
+            <li><i class="fab fa-whatsapp" aria-hidden="true"></i> <span>(85) 99999-9999</span></li>
+            <li><i class="fas fa-envelope" aria-hidden="true"></i> <span>contato@glipearte.com.br</span></li>
+            <li><i class="fas fa-clock" aria-hidden="true"></i> <span>Seg–Sáb: 9h às 18h</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5585999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Fechar galeria"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <button class="lightbox-prev" aria-label="Imagem anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="lightbox-next" aria-label="Próxima imagem"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/galeria.js"></script>
+</body>
+</html>
